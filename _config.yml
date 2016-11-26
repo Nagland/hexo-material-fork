@@ -26,7 +26,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "书阁自锁,七曜圣贤"
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -67,9 +67,9 @@ background:
 
 # Images Settings
 img:
-    logo: "/img/logo.png"
-    avatar: "/img/avatar.png"
-    daily_pic: "/img/daily_pic.png"
+    logo: "/img/logo-01.png"
+    avatar: "/img/avatar-01.jpeg"
+    daily_pic: "http://box-images.qiniudn.com//blog/kuTh6BT.jpg"
     sidebar_header: "/img/sidebar_header.png"
     footerico: "/img/footer/footer_ico-"
     #upyun_logo: "/img/upyun_logo.png"
@@ -84,14 +84,14 @@ fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "
 
 # SNS Menu
 sns:
-    email: youremail@email.com
-    twitter: "https://twitter.com/twitter"
-    facebook: "https://www.facebook.com/facebook"
-    googleplus: "https://www.google.com/"
-    weibo: 
+    email: superalsrk@gmail.com
+    facebook: 
+    googleplus: 
+    weibo: "http://weibo.com/omoika"
     instagram: 
     tumblr: 
-    github: 
+    github: "http://github.com/superalsrk"
+    twitter: "http://twitter.com/superalsrk"
 
 # Sidebar User Dropdown
 dropdown: 
@@ -101,8 +101,9 @@ dropdown:
 
 # Pages Menu
 pages:
-    #about: "/about"
-    
+    友情链接: "/links/"
+    标签云: "/tags/"
+    关于: "/about/"
 
 
 # ---------------------------------------------------------------
@@ -113,8 +114,8 @@ pages:
 # Available value:
 #     duoshuo | disqus
 comment:
-    use: 
-    shortname: 
+    use: "duoshuo"
+    shortname: "stackbox"
     duoshuo_thread_key: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
 

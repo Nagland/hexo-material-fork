@@ -1,4 +1,6 @@
 <%- css("css/duoshuo.min") %>
+
+
 <style>
     #ds-thread #ds-reset .ds-post-button{
         background-color: <%= theme.uiux.theme_color %> !important;
@@ -10,10 +12,15 @@
         color: <%= theme.uiux.theme_color %> !important;
     }
 </style>
+
+<% %>
+
+<% var postKey=null; postKey='stackboxdotcn-post-' + page.path.replace('/','') %>
+
 <div id="comments">
     <!-- 多说评论框 start -->
         <div class="ds-thread" 
-            data-thread-key="<% if(theme.comment.duoshuo_thread_key == "id"){ %><%= page.id %><% } else { %><%= page.path %><% } %>" 
+            data-thread-key="<% if(theme.comment.duoshuo_thread_key == "id"){ %><%= page.id %><% } else { %><%= postKey %><% } %>" 
             data-url="<%- config.url+ config.root + url_for(path) %>"
             data-title="<%= page.title %>"></div>
     <!-- 多说评论框 end -->
