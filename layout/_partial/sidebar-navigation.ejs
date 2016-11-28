@@ -58,9 +58,15 @@
     <!-- Pages  -->
 	<% for (var i in theme.pages){ %>
 		<li>
-			<a href="<%= theme.pages[i] %>" title="<%= i %>">
-				<%= i %>
-			</a>
+            <% if(theme.pages[i][0] == '/') { %>
+    			<a href="<%= theme.pages[i] %>" title="<%= i %>">
+    				<%= i %>
+    			</a>
+            <% } else { %>
+                <a href="<%= theme.pages[i] %>" title="<%= i %>" target='_blank'>
+                    <%= i %>
+                </a>
+            <% } %>
 		</li>
 	<% } %>
 

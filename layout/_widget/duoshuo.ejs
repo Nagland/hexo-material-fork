@@ -16,6 +16,8 @@
 <% %>
 
 <% var postKey=null; postKey='stackboxdotcn-post-' + page.path.replace('/','') %>
+<% if(page.path.replace('/index.html','') == 'about') {postKey = 'page-' + page.path.replace('/index.html','') } %>
+
 
 <div id="comments">
     <!-- 多说评论框 start -->
