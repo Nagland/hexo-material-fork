@@ -33,7 +33,7 @@ uiux:
     button_color: "#757575"
     android_chrome_color: "#0097A7"
     nprogress_color: "#FF4081"
-    nprogress_buffer: "800"
+    nprogress_buffer: "400"
     
 # JS Effect Switches
 js_effect:

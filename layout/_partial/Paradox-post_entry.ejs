@@ -20,8 +20,10 @@
 
     <!-- Post Excerpt -->
     <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        <%if(post.excerpt){%>
-          <%- strip_html(post.excerpt) %>
+
+    
+        <%if(post.description){%>
+          <%- strip_html(post.description) %>
         <%}else{%>
           <%- strip_html(truncate(post.content,{length: theme.reading.entry_excerpt })) %>
         <%}%>
@@ -45,18 +47,28 @@
         <div id="post_entry-right-info">
             <!-- Category -->
             <span class="post_entry-category">
+
+                <!--
                 <%- list_categories(post.categories, {
                     show_count: false,
                     class: 'post_category',
                     style: 'none'
                 }) %>
+                -->
+
+                <%- list_tags(post.tags, {
+                    show_count: false,
+                    class: 'post_category',
+                    style: 'none'
+                }) %>
+
             </span>
             
             <% if(theme.comment.use == "duoshuo"){ %>
                 <!-- Comment Number -->
                 &nbsp;|&nbsp;
                 <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="<%= post.id %>" data-count-type="comments"></span>
+                        <span class="ds-thread-count" data-thread-key="<%= 'stackboxdotcn-' + post.layout + '-' + post.slug %>" data-count-type="comments"></span>
                 </span>
             <% } %>
             
