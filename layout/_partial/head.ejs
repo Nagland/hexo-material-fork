@@ -18,7 +18,7 @@
         }
     %>
     <title>
-        <% if (title){ %><%= title %> | <% } %><%= config.description %>
+        <% if (title){ %><%= title %> | <% } %><%= config.author %>
     </title>
     
     <!-- Favicons -->
@@ -32,9 +32,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="<%= theme.uiux.android_chrome_color %>">
     <meta name="author" content="<%= config.author %>">
-    <meta name="description" content="<%= config.description %>">
-    <meta name="keywords" content="<%= theme.head.keywords %>">
-    
+    <% if (page.keywords){ %>
+      <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+      <% } else if (config.keywords){ %>
+      <meta name="keywords" content="<%= config.keywords %>">
+    <%} %>
+    <% if (page.description){ %>
+      <meta name="description" content="<%= page.description %>">
+      <% } else if (config.keywords){ %>
+      <meta name="description" content="<%= config.description %>">
+    <%} %>
+        
+        
     <!--iOS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-title" content="Title">
@@ -49,13 +58,13 @@
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="<%= config.title %>">
+    <meta name="apple-mobile-web-app-title" content="<% if (title){ %><%= title %> | <% } %><%= config.author %>">
     
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="<%= config.url %>">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="<% if (title){ %><%= title %> | <% } %><%= config.title %>">
-    <meta property="og:description" content="<%= config.description %>">
+    <meta property="og:title" content="<% if (title){ %><%= title %> | <% } %><%= config.author %>">
+    <meta property="og:description" content="<% if (page.description) { %><%= page.description %> <% } else { %><%= config.description %><% } %>">
     
      <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
