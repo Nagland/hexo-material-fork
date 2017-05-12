@@ -1,4 +1,15 @@
-
+<% if(theme.comment.use === 'changyan') { %>
+    <!-- 使用 changyan -->
+    <div id="changyan-comment">
+        <%- partial('_widget/changyan') %>
+    </div>
+    <style>
+        #changyan-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
+<% } %>
 
 <% if(theme.comment.use == "duoshuo"){ %>
     <!-- 使用多说评论 -->

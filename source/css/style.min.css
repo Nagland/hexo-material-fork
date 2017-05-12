@@ -549,6 +549,8 @@ a {
 #post-content.markdown-Github .highlight pre,
 #post-content.markdown-Github pre {
 }
+
+
 #post-content.markdown-Github .gutter,
 #post-content.markdown-Github .code{
 /*  background: #f7f7f7;*/
@@ -557,7 +559,7 @@ a {
     overflow: auto;
     padding: 16px;
     border: none;
-    display: block
+    display: block;
 }
 #post-content.markdown-Github .code{
     width: 100%;
@@ -567,6 +569,7 @@ a {
 #post-content.markdown-Github .gutter{
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    border-right: 3px solid #6ce26c !important;
 }
 #post-content.markdown-Github .gutter pre,
 #post-content.markdown-Github .code pre{
@@ -4988,4 +4991,7 @@ a {
 }
 .fa-percent:before {
     content: "\f295"
+}
+#changyan-comment .module-cmt-notice {
+    display:none;
 }

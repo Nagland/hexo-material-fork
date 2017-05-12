@@ -90,8 +90,10 @@ sns:
     weibo: "http://weibo.com/omoika"
     instagram: 
     tumblr: 
+    bilibili: http://space.bilibili.com/2798977/#!/
     github: "http://github.com/superalsrk"
-    twitter: "http://twitter.com/superalsrk"
+    twitter: 
+    douban: "https://www.douban.com/people/superalsrk/"
 
 # Sidebar User Dropdown
 dropdown: 
@@ -103,7 +105,7 @@ dropdown:
 pages:
     友情链接: "/links/"
     标签云: "/tags/"
-    直播帮: "http://www.zrank.cn/resource"
+    阅读: "/reading/"
     关于: "/about/"
 
 
@@ -115,10 +117,10 @@ pages:
 # Available value:
 #     duoshuo | disqus
 comment:
-    use: "duoshuo"
-    shortname: "stackbox"
-    duoshuo_thread_key: path
-    duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
+    use: "changyan"
+    changyan_appid: "cysYWqbsk"
+    changyan_conf: "prod_e0fbc910cadd8b1c7f4072420d23ebf5"
+
 
 # Search Systems
 # Available value:

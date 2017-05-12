@@ -22,6 +22,14 @@
         <span class="visuallyhidden">Google Plus</span>
     </button></a>
     <% } %>
+
+    <!-- bilibili -->
+    <% if(theme.sns.douban == undefined){ %>
+    <% }else{ %>
+    <a href="<%= theme.sns.bilibili %>" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(<%= theme.img.footerico %>bilibili.svg);">
+        <span class="visuallyhidden">Bilibili</span>
+    </button></a>
+    <% } %>
     
     <!-- Weibo -->
     <% if(theme.sns.weibo == undefined){ %>
@@ -54,4 +62,13 @@
         <span class="visuallyhidden">Github</span>
     </button></a>
     <% } %>
+
+     <!-- douban -->
+    <% if(theme.sns.douban == undefined){ %>
+    <% }else{ %>
+    <a href="<%= theme.sns.douban %>" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(<%= theme.img.footerico %>douban.svg);">
+        <span class="visuallyhidden">Douban</span>
+    </button></a>
+    <% } %>
+
 </div>
