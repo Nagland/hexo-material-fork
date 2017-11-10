@@ -105,7 +105,7 @@ dropdown:
 pages:
     友情链接: "/links/"
     标签云: "/tags/"
-    工具: "http://stackbox.cn:8888/"
+    工具: "http://stackbox.cn:9000/"
     关于: "/about/"
 
 
