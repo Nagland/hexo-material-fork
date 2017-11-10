@@ -51,7 +51,7 @@ reading:
 # Thumbnail Settings
 thumbnail:
     purecolor: 
-    random_amount: 5
+    random_amount: 19
 
 # Background Settings
 # bing available parameter:
@@ -69,7 +69,7 @@ background:
 img:
     logo: "/img/logo-01.png"
     avatar: "/img/avatar-01.jpeg"
-    daily_pic: "http://box-images.qiniudn.com//blog/kuTh6BT.jpg"
+    daily_pic: "/img/header.jpg"
     sidebar_header: "/img/sidebar_header.png"
     footerico: "/img/footer/footer_ico-"
     #upyun_logo: "/img/upyun_logo.png"
